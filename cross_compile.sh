@@ -1,8 +1,6 @@
 #!/bin/sh
 
-#Don't put the full path here. It has to be found in the 
-# In /home/yourusername/.bashrc add the following line add the end instead:
-# export PATH=$PATH:/home/richel/GitHubs/ProjectRichelBilderbeek/Libraries/mxe/usr/bin/
+export PATH=`pwd`/mxe/usr/bin:$PATH
 my_gcc="i686-w64-mingw32.static-g++"
 my_folder="travis_gcc_cpp98"
 
