@@ -1,15 +1,16 @@
 sudo: required
 
 install:
-  - travis_wait 30 ./install_mxe.sh
+  - travis_wait 55 ./install_mxe.sh
   - ./download_code.sh
 
 script: 
   - ./cross_compile.sh
 
 after_failure:
-  - cd mxe; find . | egrep "i686-w64-mingw32.static-qmake-qt5"; cd ..
-  - cd mxe; find . | egrep "i686-w64-mingw32.static-qmake-qt4"; cd ..
+  - cd mxe; find . | egrep "i686-w64-mingw32.static-g++"; cd ..
   - cd mxe/usr/bin; ls; cd ../../..
   - cd travis_qmake_gcc_cpp98; ls; cd ..
-  - cd travis_qmake_gcc_cpp98; find . ; cd ..
+  - cd travis_qmake_gcc_cpp98; find . | egrep "\.exe" ; cd ..
+  - cd travis_qmake_gcc_cpp98; find . | egrep "travis_" ; cd ..
+  - cd travis_qmake_gcc_cpp98; find . | egrep "mxe_" ; cd ..
