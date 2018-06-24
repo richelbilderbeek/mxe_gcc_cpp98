@@ -34,3 +34,4 @@ Makefile
 *qmake_gcov
 *.pro.user
 travis_gcc_cpp98
+mxe/
