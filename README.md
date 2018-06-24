@@ -1,4 +1,4 @@
-# mxe_qmake_gcc_cpp98
+# mxe_gcc_cpp98
 
 [![Travis CI logo](TravisCI.png)](https://travis-ci.org)
 
