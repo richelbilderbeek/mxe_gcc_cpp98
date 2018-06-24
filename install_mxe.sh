@@ -1,8 +1,12 @@
 #!/bin/sh
 
 echo "Install the MXE prerequisites"
+
+# Package name | Dependency name
+# p7zip-full   | 7za
+
 sudo apt install \
-  p7zip-full \ # For 7za
+  p7zip-full \
   autopoint \
   bison \
   flex \
