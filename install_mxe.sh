@@ -3,11 +3,10 @@
 apt-cache search autopoint
 apt-cache search gperf
 apt-cache search intltoolize
-apt-cache search 7za
 
 echo "Install the MXE prerequisites"
 sudo apt install \
-  7za \
+  p7zip-full \ # For 7za
   autopoint \
   bison \
   flex \
