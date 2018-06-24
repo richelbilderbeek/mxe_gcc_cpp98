@@ -1,9 +1,9 @@
 #!/bin/sh
 
-apt search autopoint
-apt search gperf
-apt search intltool
-apt search intltoolize
+apt-cache search autopoint
+apt-cache search gperf
+apt-cache search intltoolize
+apt-cache search 7za
 
 echo "Install the MXE prerequisites"
 sudo apt install \
@@ -12,8 +12,6 @@ sudo apt install \
   bison \
   flex \
   gperf \
-  gsed \
-  intltool \
   libtool \
   p7zip-full \
   ruby \
