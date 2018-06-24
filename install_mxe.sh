@@ -2,16 +2,14 @@
 
 echo "Install the MXE prerequisites"
 
-# Package name | Dependency name
-# p7zip-full   | 7za
-# gettext      | autopoint
-
 sudo apt install \
-  p7zip-full \
+  7za \
+  autopoint \
   gettext \
   bison \
   flex \
   gperf \
+  intltoolize \
   libtool \
   p7zip-full \
   ruby \
