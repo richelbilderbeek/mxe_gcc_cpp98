@@ -7,7 +7,7 @@ echo "Install the MXE prerequisites"
 # p7zip-full   | 7za
 
 # Must be one line!
-sudo apt install p7zip-full autopoint gettext bison flex gperf intltoolize libtool p7zip-full ruby scons
+sudo apt install p7zip-full autopoint gettext bison flex gperf intltool libtool p7zip-full ruby scons
 
 echo "Clone the GitHub"
 git clone https://github.com/mxe/mxe.git
