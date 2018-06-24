@@ -16,6 +16,7 @@ sudo apt install \
   intltool \
   libtool \
   p7zip-full \
+  ruby \
   scons
 
 echo "Clone the GitHub"
