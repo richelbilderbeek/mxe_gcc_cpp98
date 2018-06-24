@@ -1,9 +1,5 @@
 #!/bin/sh
 
-apt-cache search autopoint
-apt-cache search gperf
-apt-cache search intltoolize
-
 echo "Install the MXE prerequisites"
 sudo apt install \
   p7zip-full \ # For 7za

@@ -1,5 +1,10 @@
 sudo: required
 
+before_install:
+  - apt-cache search autopoint
+  - apt-cache search gperf
+  - apt-cache search intltoolize
+
 install:
   - travis_wait 55 ./install_mxe.sh
   - ./download_code.sh
