@@ -1,14 +1,19 @@
 #!/bin/sh
 
+apt search autopoint
+apt search gperf
+apt search intltool
+apt search intltoolize
+
 echo "Install the MXE prerequisites"
-sudo apt-get install \
+sudo apt install \
   7za \
   autopoint \
   bison \
   flex \
   gperf \
+  gsed \
   intltool \
-  intltoolize \
   libtool \
   p7zip-full \
   scons
