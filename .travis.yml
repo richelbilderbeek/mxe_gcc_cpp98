@@ -3,6 +3,9 @@ dist: trusty
 group: edge
 
 before_install:
+  # C++14
+  - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+  - sudo apt-get update -qq
   - apt-cache search autopoint
   - apt-cache search gperf
   - apt-cache search intltoolize
