@@ -1,7 +1,17 @@
 #!/bin/sh
 
 echo "Install the MXE prerequisites"
-sudo apt-get install autopoint gperf intltool p7zip-full
+sudo apt-get install \
+  7za \
+  autopoint \
+  bison \
+  flex \
+  gperf \
+  intltool \
+  intltoolize \
+  libtool \
+  p7zip-full \
+  scons
 
 echo "Clone the GitHub"
 git clone https://github.com/mxe/mxe.git
@@ -14,3 +24,7 @@ cd mxe
 
 echo "Build MXE with GCC"
 make gcc
+
+echo "Build MXE with qmake"
+make qt
+
