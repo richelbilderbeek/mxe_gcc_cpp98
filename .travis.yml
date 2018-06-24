@@ -6,9 +6,10 @@ before_install:
   # C++14
   - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
   - sudo apt-get update -qq
+  - apt-cache search 7za
   - apt-cache search autopoint
   - apt-cache search gperf
-  - apt-cache search intltoolize
+  - apt-cache search intltool
 
 install:
   - travis_wait 55 ./install_mxe.sh
